@@ -8,6 +8,8 @@ const imgBaner = document.querySelector('.adv');
 const nowBook = 'Книга 3. this и Прототипы Объектов';
 const nowСhapter8 = 'Глава 8: За пределами ES6';
 const cloneChapter = liElem[25].cloneNode(true);
+
+const bookTo = document.querySelectorAll('.book ul li');
 //Проверка
 console.log(ulElem);
 console.log(liElem);
@@ -15,6 +17,8 @@ console.log(book);
 console.log(book[0]);
 console.log(booksName);
 
+console.log('test');
+console.log(bookTo);
 
 //Работа
 liElem[4].before(liElem[8]);
@@ -36,6 +40,6 @@ booksName[4].textContent = nowBook;
 imgBaner.style.display = 'none';
 
 
-book[2].append(cloneChapter);
+ulElem[2].appendChild(cloneChapter);
 cloneChapter.textContent = nowСhapter8;
 cloneChapter.after(liElem[26]);
